@@ -31,10 +31,9 @@ const Footer = () => {
     {
       title: 'Connect',
       links: [
-        { label: 'LinkedIn', href: '#' },
-        { label: 'GitHub', href: '#' },
-        { label: 'Twitter', href: '#' },
-        { label: 'Email', href: 'mailto:your.email@example.com' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/snehavarsha/' },
+        { label: 'GitHub', href: 'https://github.com/snehassv' },
+        { label: 'Email', href: 'snehasriram.contact@gmail.com' },
       ],
     },
   ];
@@ -52,7 +51,7 @@ const Footer = () => {
               <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#141414] border border-[#3d3d3d]">
                 <Database className="w-5 h-5 text-[#d1e29d]" />
               </div>
-              <span className="text-lg font-semibold text-white">[Your Name]</span>
+              <span className="text-lg font-semibold text-white">Sneha Sriram</span>
             </div>
             <p className="text-gray-400 text-sm mb-6 max-w-sm">
               Data Engineer passionate about building scalable data solutions 
@@ -89,7 +88,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#3d3d3d]/50 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500">
-            &copy; {currentYear} [Your Name]. All rights reserved.
+            &copy; {currentYear} Sneha Sriram. All rights reserved.
           </p>
           
           <button

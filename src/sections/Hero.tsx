@@ -94,7 +94,7 @@ const Hero = () => {
                 style={{ transitionDelay: '0.3s' }}
               >
                 Hello, I&apos;m{' '}
-                <span className="block mt-2 gradient-text glow-text">Snehavarsha Sriram</span>
+                <span className="block mt-2 gradient-text glow-text">Sneha Sriram</span>
               </h1>
               
               <div className="flex items-center gap-3 text-2xl sm:text-3xl lg:text-4xl">
@@ -110,10 +110,9 @@ const Hero = () => {
               className="text-lg text-gray-400 max-w-xl leading-relaxed"
               style={{ transitionDelay: '0.5s' }}
             >
-              Data engineer with 4+ years of experience building and operating production-grade data pipelines and platform services. Proficient in 
-              Python, SQL, Airflow, and dbt on GCP, with strong data modeling and relational theory background. Optimized ETL workflows to reduce 
-              runtime and costs by over 25% and implemented monitoring and CI/CD practices to ensure reliability. Seeking to apply containerized, 
-              version-controlled workflows to support large-scale, regulated healthcare and research datasets.
+             Experienced professional with 4+ years of diverse expertise across data engineering, data analysis, software engineering, and cybersecurity. 
+             Skilled in developing robust data infrastructures, extracting actionable insights from complex datasets, and building secure, scalable software 
+             solutions.
             </p>
 
             {/* Career Path Pills */}
@@ -122,9 +121,9 @@ const Hero = () => {
               style={{ transitionDelay: '0.6s' }}
             >
               {[
-                { icon: Code2, label: 'Software Engineer', color: 'from-blue-500/20 to-blue-600/10' },
-                { icon: BarChart3, label: 'Data Analyst', color: 'from-purple-500/20 to-purple-600/10' },
                 { icon: Database, label: 'Data Engineer', color: 'from-[#d1e29d]/20 to-[#a8c66c]/10' },
+                { icon: BarChart3, label: 'Data Analyst', color: 'from-purple-500/20 to-purple-600/10' },
+                { icon: Code2, label: 'Software Engineer', color: 'from-blue-500/20 to-blue-600/10' },                
               ].map((item, index) => (
                 <div
                   key={item.label}
@@ -250,7 +249,7 @@ const Hero = () => {
               <span className="text-xs text-[#d1e29d]">SQL</span>
             </div>
             <div className="absolute left-0 bottom-1/4 glass rounded-lg px-3 py-2 floating" style={{ animationDelay: '2s' }}>
-              <span className="text-xs text-[#d1e29d]">AWS</span>
+              <span className="text-xs text-[#d1e29d]">GCP</span>
             </div>
           </div>
         </div>
