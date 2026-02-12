@@ -94,7 +94,7 @@ const Hero = () => {
                 style={{ transitionDelay: '0.3s' }}
               >
                 Hello, I&apos;m{' '}
-                <span className="block mt-2 gradient-text glow-text">[Your Name]</span>
+                <span className="block mt-2 gradient-text glow-text">Snehavarsha Sriram</span>
               </h1>
               
               <div className="flex items-center gap-3 text-2xl sm:text-3xl lg:text-4xl">
@@ -110,9 +110,10 @@ const Hero = () => {
               className="text-lg text-gray-400 max-w-xl leading-relaxed"
               style={{ transitionDelay: '0.5s' }}
             >
-              Transforming raw data into strategic assets. I architect pipelines, 
-              optimize warehouses, and visualize the invisible patterns that drive 
-              business growth.
+              Data engineer with 4+ years of experience building and operating production-grade data pipelines and platform services. Proficient in 
+              Python, SQL, Airflow, and dbt on GCP, with strong data modeling and relational theory background. Optimized ETL workflows to reduce 
+              runtime and costs by over 25% and implemented monitoring and CI/CD practices to ensure reliability. Seeking to apply containerized, 
+              version-controlled workflows to support large-scale, regulated healthcare and research datasets.
             </p>
 
             {/* Career Path Pills */}
