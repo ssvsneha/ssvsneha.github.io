@@ -40,23 +40,23 @@ const Skills = () => {
     // Data Engineering
     { name: 'Python', icon: Code2, category: 'data', level: 95 },
     { name: 'SQL', icon: Database, category: 'data', level: 95 },
-    { name: 'Apache Spark', icon: Cpu, category: 'data', level: 90 },
+    { name: 'Salesforce', icon: Cpu, category: 'data', level: 90 },
     { name: 'Kafka', icon: Workflow, category: 'data', level: 85 },
-    { name: 'Airflow', icon: Terminal, category: 'data', level: 88 },
-    { name: 'dbt', icon: Layers, category: 'data', level: 85 },
+    { name: 'Airflow', icon: Terminal, category: 'data', level: 95 },
+    { name: 'dbt', icon: Layers, category: 'data', level: 95 },
+    { name: 'SAP', icon: Layers, category: 'data', level: 85 },
     
     // Cloud & DevOps
-    { name: 'AWS', icon: Cloud, category: 'cloud', level: 90 },
-    { name: 'Docker', icon: Box, category: 'cloud', level: 85 },
-    { name: 'Kubernetes', icon: Server, category: 'cloud', level: 80 },
-    { name: 'Terraform', icon: Shield, category: 'cloud', level: 82 },
-    { name: 'Git', icon: GitBranch, category: 'cloud', level: 92 },
-    { name: 'CI/CD', icon: Workflow, category: 'cloud', level: 85 },
+    { name: 'GCP', icon: Cloud, category: 'cloud', level: 90 },
+    { name: 'Kubernetes', icon: Server, category: 'cloud', level: 85 },
+    { name: 'Terraform', icon: Shield, category: 'cloud', level: 85 },
+    { name: 'Git', icon: GitBranch, category: 'cloud', level: 95 },
+    { name: 'CI/CD', icon: Workflow, category: 'cloud', level: 95 },
+    { name: 'BigQuery', icon: Layers, category: 'data', level: 95 },
     
     // Analytics
-    { name: 'Snowflake', icon: Database, category: 'analytics', level: 88 },
-    { name: 'Databricks', icon: Cpu, category: 'analytics', level: 85 },
-    { name: 'Tableau', icon: BarChart3, category: 'analytics', level: 80 },
+    { name: 'Power BI', icon: Cpu, category: 'analytics', level: 82 },
+    { name: 'Tableau', icon: BarChart3, category: 'analytics', level: 85 },
     { name: 'Pandas', icon: Code2, category: 'analytics', level: 92 },
   ];
 
@@ -277,8 +277,8 @@ const Skills = () => {
         <div className={`grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-[#3d3d3d]/50 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {[
             { value: '15+', label: 'Technologies' },
-            { value: '5+', label: 'Years Experience' },
-            { value: '50+', label: 'Projects' },
+            { value: '4+', label: 'Years Experience' },
+            { value: '100+', label: 'Production Data Pipelines' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl font-bold gradient-text mb-1">{stat.value}</div>

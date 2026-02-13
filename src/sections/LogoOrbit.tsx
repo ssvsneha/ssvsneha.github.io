@@ -14,11 +14,11 @@ const LogoOrbit = () => {
   const trackRef = useRef<HTMLDivElement>(null);
 
   const technologies = [
-    { icon: Cloud, name: 'AWS' },
+    { icon: Cloud, name: 'GCP' },
     { icon: Database, name: 'PostgreSQL' },
-    { icon: Server, name: 'Apache Spark' },
+    { icon: Server, name: 'Oracle' },
     { icon: Cpu, name: 'Python' },
-    { icon: Layers, name: 'Databricks' },
+    { icon: Layers, name: 'Kubernetes' },
     { icon: Box, name: 'Docker' },
     { icon: Terminal, name: 'Airflow' },
     { icon: GitBranch, name: 'Git' },

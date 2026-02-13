@@ -56,15 +56,14 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'your.email@example.com', href: 'mailto:your.email@example.com' },
-    { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' },
-    { icon: MapPin, label: 'Location', value: 'San Francisco, CA', href: '#' },
+    { icon: Mail, label: 'Email', value: 'snehasriram.contact@gmail.com', href: 'mailto:snehasriram.contact@gmail.com' },
+    { icon: Phone, label: 'Phone', value: '+1(443) 593-4635', href: 'tel:+14435934635' },
+    { icon: MapPin, label: 'Location', value: 'Maryland, US', href: 'https://maps.app.goo.gl/tCju9tsDZWD66kVN7' },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, label: 'LinkedIn', href: '#' },
-    { icon: Github, label: 'GitHub', href: '#' },
-    { icon: Twitter, label: 'Twitter', href: '#' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/snehavarsha/' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/snehassv' },
   ];
 
   return (

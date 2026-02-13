@@ -163,8 +163,8 @@ const Hero = () => {
               style={{ transitionDelay: '0.8s' }}
             >
               {[
-                { value: '5+', label: 'Years Experience' },
-                { value: '50+', label: 'Projects Completed' },
+                { value: '4+', label: 'Years Experience' },
+                { value: '100+', label: 'Production Data Pipelines' },
                 { value: '99.9%', label: 'Uptime Achieved' },
               ].map((stat) => (
                 <div key={stat.label} className="space-y-1">
