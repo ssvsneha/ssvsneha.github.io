@@ -33,7 +33,7 @@ const Footer = () => {
       links: [
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/snehavarsha/' },
         { label: 'GitHub', href: 'https://github.com/snehassv' },
-        { label: 'Email', href: 'snehasriram.contact@gmail.com' },
+        { label: 'Email',  href: 'mailto:snehasriram.contact@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Sneha,%20I%20came%20across%20your%20portfolio...' },
       ],
     },
   ];

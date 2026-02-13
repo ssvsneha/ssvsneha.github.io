@@ -44,19 +44,37 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormState({ name: '', email: '', message: '' });
-    
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSubmitted(false), 5000);
+    try {
+      const response = await fetch('/archive/forms/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          name: formState.name,
+          email: formState.email,
+          message: formState.message,
+          subject: 'Portfolio Contact Form'
+        }).toString(),
+      });
+
+      if (response.ok) {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        setFormState({ name: '', email: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        alert('Error sending email');
+        setIsSubmitting(false);
+      }
+    } catch (error) {
+      alert('Error sending email');
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'snehasriram.contact@gmail.com', href: 'mailto:snehasriram.contact@gmail.com' },
+    { icon: Mail, label: 'Email', value: 'snehasriram.contact@gmail.com',  href: 'mailto:snehasriram.contact@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Sneha,%20I%20came%20across%20your%20portfolio...' },
     { icon: Phone, label: 'Phone', value: '+1(443) 593-4635', href: 'tel:+14435934635' },
     { icon: MapPin, label: 'Location', value: 'Maryland, US', href: 'https://maps.app.goo.gl/tCju9tsDZWD66kVN7' },
   ];

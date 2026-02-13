@@ -23,7 +23,7 @@ const About = () => {
             const easeOut = 1 - Math.pow(1 - progress, 3);
             
             setCounters({
-              years: Math.floor(5 * easeOut),
+              years: Math.floor(4 * easeOut),
               projects: Math.floor(50 * easeOut),
               uptime: Math.floor(99 * easeOut),
             });
