@@ -39,13 +39,16 @@ const Skills = () => {
   const skills: Skill[] = [
     // Data Engineering
     { name: 'Python', icon: Code2, category: 'data', level: 95 },
-    { name: 'SQL', icon: Database, category: 'data', level: 95 },
-    { name: 'Salesforce', icon: Cpu, category: 'data', level: 90 },
+    { name: 'SQL', icon: Code2, category: 'data', level: 95 },
+    { name: 'Salesforce', icon: Database, category: 'data', level: 90 },
+    { name: 'Mulesoft', icon: Cpu, category: 'data', level: 85 },
     { name: 'Kafka', icon: Workflow, category: 'data', level: 85 },
-    { name: 'Airflow', icon: Terminal, category: 'data', level: 95 },
+    { name: 'Unix Shell', icon: Terminal, category: 'data', level: 95 },
     { name: 'dbt', icon: Layers, category: 'data', level: 95 },
     { name: 'SAP', icon: Layers, category: 'data', level: 85 },
-    
+    { name: 'Data Governance', icon: Shield, category: 'cloud', level: 85 },
+    { name: 'Big Data technologies', icon: Database, category: 'data', level: 95 },
+
     // Cloud & DevOps
     { name: 'GCP', icon: Cloud, category: 'cloud', level: 90 },
     { name: 'Kubernetes', icon: Server, category: 'cloud', level: 85 },
