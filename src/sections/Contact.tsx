@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { 
   Mail, 
   Phone, 
@@ -41,37 +42,33 @@ const Contact = () => {
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch('/archive/forms/contact.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-          name: formState.name,
-          email: formState.email,
-          message: formState.message,
-          subject: 'Portfolio Contact Form'
-        }).toString(),
-      });
+  e.preventDefault();
+  setIsSubmitting(true);
 
-      if (response.ok) {
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        setFormState({ name: '', email: '', message: '' });
-        setTimeout(() => setIsSubmitted(false), 5000);
-      } else {
-        alert('Error sending email');
-        setIsSubmitting(false);
-      }
-    } catch (error) {
-      alert('Error sending email');
-      setIsSubmitting(false);
-    }
-  };
+  try {
+    await emailjs.send(
+      'service_ewfya3c',
+      'template_heu3h6d',
+      {
+        from_name: formState.name,
+        from_email: formState.email,
+        message: formState.message,
+      },
+      '4EeM9X9-UZZhELmVW'
+    );
+
+    setIsSubmitted(true);
+    setFormState({ name: '', email: '', message: '' });
+
+  } catch (error) {
+    console.error('Email failed:', error);
+    alert('Something went wrong. Please try again.');
+  }
+
+  setIsSubmitting(false);
+
+  setTimeout(() => setIsSubmitted(false), 5000);
+};
 
   const contactInfo = [
     { icon: Mail, label: 'Email', value: 'snehasriram.contact@gmail.com',  href: 'mailto:snehasriram.contact@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Sneha,%20I%20came%20across%20your%20portfolio...' },
