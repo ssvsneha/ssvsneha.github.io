@@ -64,6 +64,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/snehavarsha/' },
     { icon: Github, label: 'GitHub', href: 'https://github.com/snehassv' },
+    { icon: Twitter, label: 'Twitter', href: 'https://x.com/GuptaHarini' },
   ];
 
   return (

@@ -53,6 +53,7 @@ const Skills = () => {
     { name: 'Git', icon: GitBranch, category: 'cloud', level: 95 },
     { name: 'CI/CD', icon: Workflow, category: 'cloud', level: 95 },
     { name: 'BigQuery', icon: Layers, category: 'data', level: 95 },
+    { name: 'Docker', icon: Box, category: 'cloud', level: 85 },
     
     // Analytics
     { name: 'Power BI', icon: Cpu, category: 'analytics', level: 82 },
