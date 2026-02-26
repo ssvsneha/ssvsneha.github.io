@@ -353,7 +353,7 @@ const Skills = () => {
         {/* Bottom Stats */}
         <div className={`grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-[#3d3d3d]/50 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {[
-            { value: '15+', label: 'Technologies' },
+            { value: '50+', label: 'Technologies' },
             { value: '4+', label: 'Years Experience' },
             { value: '100+', label: 'Production Data Pipelines' },
           ].map((stat) => (
