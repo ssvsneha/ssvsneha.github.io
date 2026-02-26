@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Github, Sparkles, ArrowUpRight } from 'lucide-react';
+import { Sparkles, ArrowUpRight } from 'lucide-react';
 
 const Projects = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -34,11 +34,7 @@ const Projects = () => {
         { label: 'Events/Day', value: '10M+' },
         { label: 'Latency', value: '<100ms' },
         { label: 'Uptime', value: '99.9%' },
-      ],
-      links: {
-        demo: '#',
-        github: '#',
-      },
+      ]
     },
     {
       title: 'Cloud Data Warehouse Migration',
@@ -50,11 +46,7 @@ const Projects = () => {
         { label: 'Cost Reduction', value: '60%' },
         { label: 'Performance', value: '5x' },
         { label: 'Tables Migrated', value: '500+' },
-      ],
-      links: {
-        demo: '#',
-        github: '#',
-      },
+      ]
     },
     {
       title: 'ML Feature Store',
@@ -66,11 +58,7 @@ const Projects = () => {
         { label: 'Features', value: '1000+' },
         { label: 'Teams', value: '5' },
         { label: 'Serving Latency', value: '<10ms' },
-      ],
-      links: {
-        demo: '#',
-        github: '#',
-      },
+      ]
     },
   ];
 
