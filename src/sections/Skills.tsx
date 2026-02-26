@@ -126,6 +126,7 @@ const Skills = () => {
     { name: 'Linux', icon: Box, category: 'devops', level: 85 },
 
     // Analytics & AI
+    { name: 'Tableau', icon: Cpu, category: 'analytics', level: 82 },
     { name: 'Power BI', icon: Cpu, category: 'analytics', level: 82 },
     { name: 'Data Analysis', icon: BarChart3, category: 'analytics', level: 85 },
     { name: 'Pandas', icon: Code2, category: 'analytics', level: 92 },
