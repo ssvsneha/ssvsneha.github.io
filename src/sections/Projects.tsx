@@ -183,24 +183,6 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-
-                  {/* Links */}
-                  <div className="flex gap-3">
-                    <a
-                      href={project.links.demo}
-                      className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-[#0a0a0a] bg-[#d1e29d] rounded-lg hover:bg-[#c5d78a] transition-colors"
-                    >
-                      Live Demo
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                    <a
-                      href={project.links.github}
-                      className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white border border-[#3d3d3d] rounded-lg hover:border-[#d1e29d] hover:text-[#d1e29d] transition-colors"
-                    >
-                      <Github className="w-4 h-4" />
-                      Code
-                    </a>
-                  </div>
                 </div>
 
                 {/* Corner Accent */}
@@ -214,10 +196,12 @@ const Projects = () => {
 
         {/* View All CTA */}
         <div className={`text-center mt-12 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <button className="inline-flex items-center gap-2 px-6 py-3 border border-[#3d3d3d] text-white rounded-lg hover:border-[#d1e29d] hover:bg-[#d1e29d]/5 transition-all duration-300 group">
-            View All Projects
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-          </button>
+          <a href="https://github.com/snehassv">
+            <button className="inline-flex items-center gap-2 px-6 py-3 border border-[#3d3d3d] text-white rounded-lg hover:border-[#d1e29d] hover:bg-[#d1e29d]/5 transition-all duration-300 group">
+              View All Projects
+              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </button>
+          </a>
         </div>
       </div>
     </section>
